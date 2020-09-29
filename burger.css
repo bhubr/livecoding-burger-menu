@@ -1,0 +1,33 @@
+@import 'icons.css';
+
+.navbar ul {
+  display: none;
+}
+
+.navbar input[type="checkbox"] {
+  display: none;
+}
+
+.navbar input[type="checkbox"]:checked ~ ul {
+  display: block;
+}
+
+.navbar input[type="checkbox"] + label span[class^="icon-"] {
+  display: none;
+}
+
+.navbar input[type="checkbox"]:not(:checked) + label .icon-menu {
+  display: inline;
+}
+
+.navbar input[type="checkbox"]:checked + label .icon-cross {
+  display: inline;
+}
+
+span {
+  display: inline-block;
+}
+
+.span-1 ~ .span-2 {
+  background: #fcc;
+}
